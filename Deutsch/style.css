@@ -1,0 +1,196 @@
+/* Sidebar */
+#sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 8vh;
+  background-color: #ffd166;
+  display: flex;
+  align-items: center;
+  padding-left: 2vw;
+  z-index: 1000;
+  border-bottom: 10px solid #f19743;
+}
+p {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 1vw;
+}
+.game-title {
+  color: white;
+  font-size: 2.5vw;
+  font-weight: bold;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* Word Display */
+#wordDisplay {
+  margin-top: 13vh;
+  font-size: 6vh;
+  font-weight: bold;
+  color: #eba31e;
+  text-align: center;
+  width: 100%;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#startLabel {
+  text-align: center;
+  font-size: 4vh;
+  font-weight: bold;
+  color: #235cfa;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  top: 45vh;
+}
+/* Start Button */
+#startButton {
+  text-align: center;
+  margin-top: 5vh;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2vh 4vw;
+  font-size: 4vh;
+  background-color: #2998e2;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  font-weight: bold;
+}
+
+#startButton:hover {
+  transform: translateY(-5px);
+  box-shadow: 5px 10px #09607e;
+}
+
+/* Streak Display */
+#streak {
+  margin-top: 2vh;
+  text-align: center;
+  font-size: 5vh;
+  color: #f19743;
+  font-weight: bold;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* Answer Container */
+#answerContainer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 5vw;
+  margin-top: 5vh;
+}
+
+/* Answer Buttons */
+.answer {
+  text-align: left;
+  padding-left: 2.5vh;
+  padding-top: 1vh;
+  width : 20vw;
+  height: 12vh;
+  font-size: 4vh;
+  background-color: #1cc546;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.answer:hover {
+  transform: translate(-5px, -5px);
+  box-shadow: 5px 10px #067c2e;
+}
+
+/* Try Again Button */
+#TryAgainCont {
+  display: flex;
+  justify-content: center;
+  margin-top: 5vh;
+}
+
+#tryAgain {
+  padding: 2vh 2vw;
+  font-size: 5vh;
+  background-color: #e63946;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#tryAgain:hover {
+  transform: translate(-5px, -5px);
+  box-shadow: 5px 10px #b71c1c;
+}
+
+/* Footer */
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #f9f9f9;
+  text-align: center;
+  font-size: 1rem;
+  padding: 3vh 2vw;
+  color: #555;
+  z-index: 999;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+footer a {
+  color: #2998e2;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Media Query for smaller screens */
+@media (max-width: 768px) {
+  .game-title {
+    font-size: 5vw;
+  }
+  #answerContainer {
+    flex-direction: column;
+    align-items: center;
+    gap: 2vh;
+  }
+  #wordDisplay {
+    margin-top: 15vh;
+    font-size: 8vw;
+  }
+  #startLabel {
+    font-size: 4vw;
+  }
+  .answer{
+    text-align: left;
+    padding: 2vh 2vw;
+    width : 70vw;
+    height: 3vh;
+    font-size: 3vh; 
+  }
+  #startButton, #tryAgain {
+    padding: 2vh 6vw;
+    font-size: 5vw;
+  }
+  #streak {
+    font-size: 4vw;
+  }
+}
+/* Hide radio circles*/
+input[type="radio"] {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  outline: none;
+  margin: 0;
+}
